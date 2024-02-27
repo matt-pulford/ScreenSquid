@@ -1,0 +1,7 @@
+.home-container {
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    height: 60vh; /* Set the height of the container to the full viewport height */
+    margin: 10vh 30%;
+  }
+
