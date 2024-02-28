@@ -10,8 +10,6 @@ function App() {
     <Router>
       <div className="App">
       {location.pathname !== '/room' && <Navbar />}
-        {/* Divider added directly below the Navbar */}
-        
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path='/create' element={<Create />} />
@@ -20,6 +18,7 @@ function App() {
         </Routes>
       </div>
     </Router>
+    
   );
 }
 

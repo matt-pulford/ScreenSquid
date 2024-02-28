@@ -1,15 +1,23 @@
-html {
 
+@font-face {
+  font-family: 'Whale';
+  src: local('Whale'), url('../fonts/Whale.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
+  
+  
+  .App {
+    min-height: 100vh;
+    background-image: url('../images/background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
 
-.App {
 
-}
 
-.website-divider-container-406099 {
-  position: relative;
-  height: 100%;
-}
+
 
 
 .logo:hover {

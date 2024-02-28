@@ -13,7 +13,7 @@ export default function Navbar() {
             </div>
             {/* Navbar content */}
             <div className="logo">
-                <h4>Logo</h4>
+                <h4>Screen Squid</h4>
             </div>
             <div className="nav-links">
                 <a href="/">About</a>
