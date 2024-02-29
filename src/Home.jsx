@@ -21,7 +21,7 @@ export default function Home() {
       // Ensure animation happens at least every 30 seconds
       // Randomize interval for a bit of unpredictability but cap it at 30000ms
       const maxTime = 30000;
-      const randomTime = Math.random() * 15000 + 15000; // Random time between 15s and 30s
+      const randomTime = Math.random() * 5000 + 15000; // Random time between 15s and 30s
       setTimeout(() => {
         randomizeAnimation();
         setRandomTimer(); // Schedule the next animation
