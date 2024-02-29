@@ -1,7 +1,7 @@
 .home-screen {
     display: flex;
     justify-content: center;
-
+    align-items: center;
 }
 
 .button-container {
@@ -13,10 +13,10 @@
     height: 400px;
     width: 300px;
     border-radius: 10px;
-    margin-top: 50px;
     box-shadow: 5px 5px 14px #00000060;
-
-
+    position: relative;
+    bottom: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.233);
 }
 
 .tilted-logo {

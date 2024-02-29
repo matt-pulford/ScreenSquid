@@ -1,22 +1,21 @@
+
+
 .navbar {
     display: flex;
+    background-color: #2f00ff50;
     justify-content: space-between;
-    width: 100%;
     height: 75px;
     align-items: center;
+    margin: 10px 20%;
+    position:sticky;
+    top:15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 14px #00000060;
 
 }
 
-.divider-img-406099 {
-    position: absolute;
-    width: 100%;
-    height: 183px;
 
-    transform: scale(1, -1);
-    top: 0px;
-    left: 0px;
-    fill: rgba(7, 65, 223, 0.404)
-}
+
 
 
 .logo {
@@ -54,3 +53,25 @@
 .logo, .nav-links {
     flex: 1; /* Allows each to grow */
 }
+
+.navbar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    width: 80%;
+    transition: transform 0.5s ease; /* Smooth transition for sliding */
+}
+
+.navbar-toggle {
+    cursor: pointer;
+    font-size: 100px; /* Adjust size as needed */
+    z-index: 1; /* Ensure it is clickable but below the navbar content when expanded */
+    padding: 10px 0; /* Adds some space around the dash */
+    color: white;
+    position: relative;
+    bottom: 50px;
+}
+
