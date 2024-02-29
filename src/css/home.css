@@ -23,10 +23,10 @@
     width: 40%;
     position: relative;
     bottom: 100px;
-    border-radius: 50%;
+    border-radius: 42%;
     padding: 25px;
 
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.6);
     box-shadow: 5px 5px 14px #00000060;
 
 }
@@ -34,7 +34,7 @@
 .button-body {
     background: rgba(255, 255, 255, 0.6);
     box-shadow: 5px 5px 14px #00000060;
-
+    transition: all 0.2s ease; /* Smooth transition for press effect */
     text-decoration: none;
     font-size: 1.5rem;
     width: 200px;
@@ -47,6 +47,11 @@
     bottom: 30px;
     border-radius: 5px;
 }
+
+.button-body:active {
+    transform: scale(0.95); /* Slightly scale down the button when pressed */
+    box-shadow: 2px 2px 6px #00000099; /* Adjust the shadow to give a "pressed" look */
+  }
 
 .button-text {
     color: #2f00ff;
@@ -90,6 +95,24 @@
     animation: rotate360 1s linear;
   }
 
-  
+  @keyframes flipX {
+    from { transform: rotateX(0deg); }
+    to { transform: rotateX(360deg); }
+}
+
+.tilted-logo.flipX {
+  animation: flipX 3s linear forwards;
+}
+
+
+
+@keyframes spinY {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(360deg); }
+}
+
+.tilted-logo.spinY {
+  animation: spinY 3s linear forwards;
+}
   
   

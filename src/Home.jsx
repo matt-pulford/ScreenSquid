@@ -1,35 +1,31 @@
 import React, { useEffect } from 'react';
-import './css/home.css'
-import { Link } from 'react-router-dom'
+import './css/home.css';
+import { Link } from 'react-router-dom';
 
-import screenSquidLogo from '../src/images/screen-squid-logo.png'
+import screenSquidLogo from '../src/images/screen-squid-logo.png';
 
 export default function Home() {
   useEffect(() => {
     const logo = document.querySelector('.tilted-logo');
 
     function randomizeAnimation() {
-      const animations = ['jiggle', 'rotate'];
-      // Remove any existing animation classes and force reflow to restart the animation
-      logo.classList.remove('jiggle', 'rotate');
-      void logo.offsetWidth; // Trigger reflow
-      // Randomly add one of the animation classes
+      const animations = ['jiggle', 'rotate', 'flipX', 'spinY'];
+      logo.classList.remove('jiggle', 'rotate', 'flipX', 'spinY');
+      void logo.offsetWidth;
       logo.classList.add(animations[Math.floor(Math.random() * animations.length)]);
     }
 
     function setRandomTimer() {
-      // Ensure animation happens at least every 30 seconds
-      // Randomize interval for a bit of unpredictability but cap it at 30000ms
       const maxTime = 30000;
-      const randomTime = Math.random() * 5000 + 15000; // Random time between 15s and 30s
+      const randomTime = Math.random() * 5000 + 15000;
       setTimeout(() => {
         randomizeAnimation();
-        setRandomTimer(); // Schedule the next animation
+        setRandomTimer();
       }, randomTime);
     }
 
-    setRandomTimer(); // Initial call to start the animation sequence
-    return () => clearTimeout(setRandomTimer); // Cleanup on unmount
+    setRandomTimer();
+    return () => clearTimeout(setRandomTimer);
   }, []);
 
   return (
