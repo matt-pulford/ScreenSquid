@@ -57,3 +57,38 @@
     margin-bottom: 50px;
 
 }
+
+@keyframes jiggle {
+    0%, 12.5%, 100% { transform: rotate(0); }
+    6.25% { transform: rotate(-5deg); }
+    18.75% { transform: rotate(5deg); }
+    25%, 37.5% { transform: rotate(0); }
+    31.25% { transform: rotate(-5deg); }
+    43.75% { transform: rotate(5deg); }
+    50%, 62.5% { transform: rotate(0); }
+    56.25% { transform: rotate(-5deg); }
+    68.75% { transform: rotate(5deg); }
+    75%, 87.5% { transform: rotate(0); }
+    81.25% { transform: rotate(-5deg); }
+    93.75% { transform: rotate(5deg); }
+  }
+  
+  .tilted-logo.jiggle {
+    animation: jiggle 2s ease-in-out; /* Adjusted duration for the complete cycle */
+  }
+  
+  
+  @keyframes rotate360 {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  
+  
+  .tilted-logo.rotate {
+    animation: rotate360 1s linear;
+  }
+
+  
+  
+  
