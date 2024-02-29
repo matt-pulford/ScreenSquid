@@ -1,24 +1,18 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './css/App.css';
-import Navbar from './Navbar';
-import Home from './Home'; // Ensure this component exists for the home page
-import Create from './Create';
-import Room from './Room';
+import React from 'react';
+import Navbar from './Navbar'; // Assuming you have this component
+// import Footer from './Footer'; // Assuming you have this component
+import AppRoutes from './Routes';
+import './css/App.css'
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-      {location.pathname !== '/room' && <Navbar />}
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path='/create' element={<Create />} />
-          <Route path='/room' element={<Room />} />
-          {/* Add more routes here for other pages */}
-        </Routes>
+    <div>
+      <Navbar />
+      <div className='app-container'>
+      <AppRoutes />
       </div>
-    </Router>
-    
+      {/* <Footer /> */}
+    </div>
   );
 }
 

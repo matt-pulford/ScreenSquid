@@ -1,16 +1,59 @@
-.home-container {
+.home-screen {
     display: flex;
-    justify-content: center; /* Horizontally center the content */
-    height: 90vh; /* Set the height of the container to the full viewport height */
-  }
+    justify-content: center;
 
-  .triangle {
-    width: 100vw;
-    height: 100vh;
-    background-color: #007BFF; /* Your triangle color */
-    clip-path: polygon(100% 0, 100% 100%, 0 100%);
-    position: fixed;
-    bottom: 0;
-    right: 0;
-  }
+}
 
+.button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2f00ff30;
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+    margin-top: 50px;
+    box-shadow: 5px 5px 14px #00000060;
+
+
+}
+
+.tilted-logo {
+    width: 40%;
+    position: relative;
+    bottom: 100px;
+    border-radius: 50%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 5px 5px 14px #00000060;
+
+}
+
+.button-body {
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 5px 5px 14px #00000060;
+
+    text-decoration: none;
+    font-size: 1.5rem;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+    bottom: 30px;
+    border-radius: 5px;
+}
+
+.button-text {
+    color: #2f00ff;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 1);
+    font-weight: 700;
+}
+
+.button-body.left {
+    margin-bottom: 50px;
+
+}

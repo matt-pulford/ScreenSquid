@@ -1,37 +1,11 @@
-
-@font-face {
-  font-family: 'Whale';
-  src: local('Whale'), url('../fonts/Whale.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-  
-  
-  .App {
-    min-height: 100vh;
-    background-image: url('../images/background.jpg');
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-
-
-
-
-
-
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home-screen {
+    width: 60%;
+    display: flex;
+    margin: 150px;
 }

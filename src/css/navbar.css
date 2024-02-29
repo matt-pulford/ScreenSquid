@@ -25,10 +25,13 @@
     display: flex;
     align-items: center;
     justify-content: flex-start; /* Ensures logo content is aligned to the left */
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: white;
     font-family: 'Whale';
-    margin-left: 30px;
+    margin-left: 60px;
+    > h4 {
+        margin: 0;
+    }
 }
 
 .nav-links {
@@ -37,12 +40,12 @@
     display: flex;
     align-items: center;
     justify-content: flex-end; /* Aligns nav-links content to the right */
-    margin-right: 30px;
+    margin-right: 60px;
 
     >a {
         color: white;
         margin: 0 25px;
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-family: 'Whale';
         text-decoration: none;
     }
@@ -51,4 +54,3 @@
 .logo, .nav-links {
     flex: 1; /* Allows each to grow */
 }
-
